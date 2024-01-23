@@ -9,12 +9,11 @@ body {
 }
 
 header {
-    font-family: 'Lato', sans-serif; 
-    font-size: 54px;
+    font-family: 'Helvetica Neue', sans-serif;
     background-color: #f9d2c2; 
     color: #333; 
     text-align: center;
-    padding: 1em 0;
+    /*padding: 1em 0;*/
 }
 
 section {
