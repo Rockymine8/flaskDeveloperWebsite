@@ -1,8 +1,0 @@
-www.jackbowlin.com {
-    redir https://jackbowlin.com{uri}
-}
-
-jackbowlin.com {
-    reverse_proxy localhost:8000
-}  
-
