@@ -3,5 +3,6 @@ www.jackbowlin.com {
 }
 
 jackbowlin.com {
-    reverse_proxy 24.144.70.191
+    reverse_proxy localhost:8000
 }  
+
