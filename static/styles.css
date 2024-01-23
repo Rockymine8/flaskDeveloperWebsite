@@ -4,14 +4,14 @@ body {
     font-family: Verdana, sans-serif; /* Verdana font */
     margin: 0;
     padding: 0;
-    background-color: #f2f0e3; /* Creamy background color */
-    color: #333; /* Darker text color for better contrast */
+    background-color: #f2f0e3;
+    color: #333; 
 }
 
 header {
-    font-family: Papyrus, fantasy;
-    background-color: #f9d2c2; /* Floral blue background color */
-    color: #333; /* Light black text color */
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f9d2c2; 
+    color: #333; 
     text-align: center;
     padding: 1em 0;
 }
@@ -20,7 +20,7 @@ section {
     max-width: 800px;
     margin: 2em auto;
     padding: 20px;
-    background-color: #e6d1a1; /* Soft peach background color */
+    background-color: #e6d1a1; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -46,7 +46,7 @@ section {
 h1,
 h2,
 h3 {
-    color: #333; /* Light black text color */
+    color: #333; /
 }
 
 .project {
@@ -54,12 +54,12 @@ h3 {
 }
 
 .project h3 {
-    color: #333; /* Light black text color */
+    color: #333; 
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #e6d1a1; /* Soft peach background color */
-    color: #333; /* Light black text color */
+    background-color: #e6d1a1; 
+    color: #333; 
 }
