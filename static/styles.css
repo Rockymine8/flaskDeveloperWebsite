@@ -22,8 +22,10 @@ header h1{
     
 }
 
-header p{
+
+header p {
     font-size: 40px;
+    margin: -0.5em 0; /* Adjust the margin values as needed */
 }
 
 section {
