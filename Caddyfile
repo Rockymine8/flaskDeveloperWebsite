@@ -1,3 +1,7 @@
-http://64.23.152.205 {
-    reverse_proxy localhost: 8000;
+www.jackbowlin.com {
+    redir https://jackbowlin.com{uri}
 }
+
+jackbowlin.com {
+    reverse_proxy localhost:8000
+}  
