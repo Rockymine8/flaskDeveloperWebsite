@@ -9,7 +9,8 @@ body {
 }
 
 header {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Lato', sans-serif; 
+    font-size: 54px;
     background-color: #f9d2c2; 
     color: #333; 
     text-align: center;
