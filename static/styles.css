@@ -8,7 +8,7 @@ body {
     color: #333; 
 }
 
-header, header h1 {
+header {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #f9d2c2; 
     font-weight: 400;
