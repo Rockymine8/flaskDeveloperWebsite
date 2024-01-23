@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    font-family: Papyrus, fantasy;
     background-color: #f9d2c2; /* Floral blue background color */
     color: #333; /* Light black text color */
     text-align: center;
