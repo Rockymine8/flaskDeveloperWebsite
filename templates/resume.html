@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Name - Developer Portfolio</title>
+        <link rel="stylesheet" href="/static/styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Jack Bowlin</h1>
+            <p>HBHS Student</p>
+        </header>
+
+        <section id="about" class="red">
+            <h2>About Me</h2>
+            <p>Write a brief introduction about yourself and your skills.</p>
+        </section>
+
+        <section id="projects" class="green">
+            <h2>Projects</h2>
+
+            {% for project in projects %}
+
+            <div class="project">
+                <h3>{{ project['name'] }}</h3>
+                <p>{{ project['description'] }}</p>
+                <!-- Add more details or links as needed -->
+            </div>
+            {% endfor %}
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section id="contact" class="blue">
+            <h2>Contact Me</h2>
+            <p>Email: your.email@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            <p>GitHub: github.com/yourusername</p>
+            <!-- Add more contact information as needed -->
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Jack Bowlin - Developer Portfolio</p>
+        </footer>
+    </body>
+</html>
