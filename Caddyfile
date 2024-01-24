@@ -2,6 +2,6 @@ www.jackbowlin.com {
     redir https://jackbowlin.com{uri} permanent
 }
 
-jackbowlin.com {
+jackbowlin.com, www.jackbowlin.com {
     reverse_proxy localhost:8000
 }  
