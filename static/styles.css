@@ -18,12 +18,12 @@ header {
 }
 header h1{
     font-weight: 400;
-    font-size: 60px;
+    font-size: 50px;
     
 }
 
 header p {
-    font-size: 40px;
+    font-size: 30px;
     margin: -0.5em 0; /* Adjust the margin values as needed */
 }
 
