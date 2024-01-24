@@ -1,5 +1,5 @@
 www.jackbowlin.com, 64.23.152.205 {
-    redir host https://jackbowlin.com{uri} permanent
+    redir https://jackbowlin.com{uri} permanent
 }
 
 jackbowlin.com {
