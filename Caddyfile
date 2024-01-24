@@ -1,7 +1,8 @@
 www.jackbowlin.com, 64.23.152.205 {
-    redir https://jackbowlin.com{uri}
+    redir host www.jackbowlin.com https://jackbowlin.com{uri} permanent
 }
 
 jackbowlin.com {
     reverse_proxy localhost:8000
 }  
+
