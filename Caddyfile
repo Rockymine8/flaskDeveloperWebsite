@@ -1,4 +1,4 @@
-www.jackbowlin.com {
+www.jackbowlin.com, 64.23.152.205{
     redir https://jackbowlin.com{uri}
 }
 
