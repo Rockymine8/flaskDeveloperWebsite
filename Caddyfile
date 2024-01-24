@@ -1,5 +1,5 @@
 www.jackbowlin.com {
-    redir jackbowlin.com{uri}
+    redir https://jackbowlin.com{uri}
 }
 
 jackbowlin.com {
