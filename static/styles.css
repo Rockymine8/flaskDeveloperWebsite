@@ -15,21 +15,21 @@ header {
     font-weight: 400;
     color: #333; 
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 0;
+    /*padding-top: 20px;
+    padding-bottom: 0;*/
 
 }
 header h1{
     font-weight: 400;
     font-size: 50px;
-    margin-bottom: -50px;
-    padding-bottom: -50px;
+    margin-bottom: -10px;
+    padding-bottom: -10px;
 }
 
 header p {
     font-size: 30px;
-    margin-top: -50px; /* Adjust the margin values as needed */
-    padding-top: -50px;
+    margin-top: -10px; /* Adjust the margin values as needed */
+    padding-top: -10px;
     /*padding-bottom: 20px;*/
 }
 
