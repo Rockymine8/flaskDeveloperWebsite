@@ -15,8 +15,8 @@ header {
     font-weight: 400;
     color: #333; 
     text-align: center;
-    margin-top: 0px;
-    /*margin-bottom: 50px*/
+    margin: 0;
+    padding: 0;
 
 
 }
