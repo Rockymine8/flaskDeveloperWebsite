@@ -15,7 +15,7 @@ header {
     font-weight: 400;
     color: #333; 
     text-align: center;
-    /*padding: 20px;*/
+    padding: 20px;
 
 }
 header h1{
@@ -27,6 +27,7 @@ header h1{
 header p {
     font-size: 30px;
     margin: -0.5em 0; /* Adjust the margin values as needed */
+    padding: 20px;
 }
 
 /* Media query for smaller screens */
