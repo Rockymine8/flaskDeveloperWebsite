@@ -26,7 +26,7 @@ header h1{
 
 header p {
     font-size: 30px;
-    margin: -0.5em 0; /* Adjust the margin values as needed */
+    /*margin: -0.5em 0; /* Adjust the margin values as needed */
     padding: 20px;
 }
 
