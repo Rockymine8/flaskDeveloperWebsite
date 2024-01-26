@@ -18,6 +18,7 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
 
+
 }
 header h1{
     font-weight: 400;
@@ -30,7 +31,7 @@ header p {
     font-size: 30px;
     margin-top: -10px; /* Adjust the margin values as needed */
     padding-top: -10px;
-    /*padding-bottom: 20px;*/
+    padding-bottom: 20px;
 }
 
 /* Media query for smaller screens */
