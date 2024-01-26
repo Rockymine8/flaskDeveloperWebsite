@@ -22,7 +22,8 @@ header {
 header h1{
     font-weight: 400;
     font-size: 50px;
-    
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 
 header p {
