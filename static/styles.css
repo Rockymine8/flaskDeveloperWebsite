@@ -1,4 +1,8 @@
 /* floral-style.css */
+html {
+margin: 0;
+padding: 0;
+}
 
 body {
     font-family: Verdana, sans-serif; /* Verdana font */
@@ -16,7 +20,7 @@ header {
     color: #333; 
     text-align: center;
     margin: 0px;
-    padding: -60px;
+    padding: 0px;
 
 
 }
