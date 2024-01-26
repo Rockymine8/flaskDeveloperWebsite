@@ -62,7 +62,7 @@
             <div class="project">
                 <h3>{{ project['name'] }}</h3>
                 <p>{{ project['description'] }}</p>
-                <p>{{ project['websiteurl'] }}</p>
+                <p>{{ project['websiteurl'] | default('') }}</p>
                 <!-- Add more details or links as needed -->
             </div>
             {% endfor %}
