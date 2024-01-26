@@ -64,7 +64,11 @@
                 <p>{{ project['description'] }}</p>
 
                 {% if project['websiteurl'] %}
-                <p>{{ project['websiteurl'] }}</p>
+                <p>
+                    <a href="{{ project['websiteurl'] }}" target="_blank"
+                        >{{ project['websiteurl'] }}</a
+                    >
+                </p>
                 {% endif %}
 
                 <!-- Add more details or links as needed -->
