@@ -10,6 +10,7 @@ body {
     padding: 0;
     background-color: #f2f0e3;
     color: #333; 
+    justify-content: start;
 }
 
 header {
