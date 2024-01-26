@@ -15,7 +15,8 @@ body {
 
 header {
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f9d2c2; 
+    background-color: #013A63;
+    /*background-color: #f9d2c2; */
     /*background-color: #D8DDDE;*/
     font-weight: 400;
     color: #333; 
@@ -31,13 +32,14 @@ header h1{
     margin-bottom: -10px;
     margin-top: 0px;
     padding-top: 10px;
+    color:white;
 
 }
 
 header p {
     font-size: 30px;
     margin-top: -10px; /* Adjust the margin values as needed */
-
+    color:white;
     padding-bottom: 20px;
 }
 
