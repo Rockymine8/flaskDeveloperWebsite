@@ -8,16 +8,16 @@ body {
     font-family: Verdana, sans-serif; /* Verdana font */
     margin: 0;
     padding: 0;
-    background-color: #f2f0e3;
+    background-color: #7fa9ed;
+   /* background-color:#89C2D9; /*#f2f0e3;*/
     color: #333; 
     justify-content: start;
 }
 
 header {
     font-family: 'Helvetica Neue', sans-serif;
-    background-color: #013A63;
+    background-color: #1B4079;
     /*background-color: #f9d2c2; */
-    /*background-color: #D8DDDE;*/
     font-weight: 400;
     color: #333; 
     text-align: center;
@@ -87,6 +87,12 @@ section {
     background-color: #9cdce7;
 }
 
+.light-blue {
+    /*background-color: #A9D6E5;
+    /*background-color: #FFECD1;*/
+    background-color: #F2F2F2;
+}
+
 h1,
 h2,
 h3 {
@@ -107,3 +113,5 @@ footer {
     background-color: #e6d1a1; 
     color: #333; 
 }
+
+

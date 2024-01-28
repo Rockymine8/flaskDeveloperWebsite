@@ -16,45 +16,59 @@
             <p>Har-Ber High School Student</p>
         </header>
 
-        <section id="about" class="red">
+        <section id="about" class="light-blue">
             <h2>About Me</h2>
             <p>
-                I'm Jack. I'm a current junior at Har-Ber High School, and I am
-                seeking internship opportunities.
+                I'm Jack. I'm a junior at Har-Ber High School, and I am seeking
+                internship opportunities.
             </p>
         </section>
 
-        <section id="skills" class="yellow">
+        <section id="skills" class="light-blue">
+            <style>
+                li {
+                    list-style-type: disc;
+                    margin-bottom: 10px;
+                }
+            </style>
             <h2>Skills</h2>
-            <p>
-                - Programming: Proficient in multiple languages, including those
-                covered in Programming 1, AP Computer Science A, and AP Computer
-                Science Principles.
-            </p>
-            <p>- Robotics: Completed Robotics I & II courses.</p>
-            <p>
-                - Database Design: Certified in Microsoft SQL Server & Database
-                Design.
-            </p>
-            <p>
-                - IT Skills: Earned an Intro to I.T. certificate, showing
-                foundational knowledge in information technology.
-            </p>
-            <p>
-                - Web Development: Currently enrolled in a front-end web
-                development course.
-            </p>
-            <p>
-                - Mobile App Development: Currently enrolled in a Flutter mobile
-                app development course.
-            </p>
-            <p>
-                - Community Service: Utilized computer science skills in the
-                EAST program to create projects benefiting the local community.
-            </p>
+
+            <ul>
+                <li>
+                    <strong>Programming:</strong> Proficient in multiple
+                    languages, including those covered in Programming 1, AP
+                    Computer Science A, and AP Computer Science Principles.
+                </li>
+                <li>
+                    <strong>Robotics:</strong> Completed Robotics I & II
+                    courses.
+                </li>
+                <li>
+                    <strong>Database Design:</strong> Certified in Microsoft SQL
+                    Server & Database Design.
+                </li>
+                <li>
+                    <strong>IT Skills:</strong> Earned an Intro to I.T.
+                    certificate, showing foundational knowledge in information
+                    technology.
+                </li>
+                <li>
+                    <strong>Web Development:</strong> Currently enrolled in a
+                    front-end web development course.
+                </li>
+                <li>
+                    <strong>Mobile App Development:</strong> Currently enrolled
+                    in a Flutter mobile app development course.
+                </li>
+                <li>
+                    <strong>Community Service:</strong> Utilized computer
+                    science skills in the EAST program to create projects
+                    benefiting the local community.
+                </li>
+            </ul>
         </section>
 
-        <section id="projects" class="green">
+        <section id="projects" class="light-blue">
             <h2>Projects</h2>
 
             {% for project in projects %}
@@ -76,15 +90,28 @@
             {% endfor %}
         </section>
 
-        <section id="contact" class="blue">
+        <section id="contact" class="light-blue">
             <h2>Contact Me</h2>
 
-            <p><i class="fas fa-envelope"></i> Email: jrbowlin7@gmail.com</p>
+            <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:jrbowlin7@gmail.com" target="_blank"
+                    >jrbowlin7@gmail.com</a
+                >
+            </p>
             <p>
                 <i class="fab fa-linkedin"></i> LinkedIn:
-                linkedin.com/in/jack-bowlin/
+                <a href="https://linkedin.com/in/jack-bowlin/" target="_blank">
+                    linkedin.com/in/jack-bowlin/
+                </a>
             </p>
-            <p><i class="fab fa-github"></i> GitHub: github.com/Rockymine8</p>
+            <p>
+                <i class="fab fa-github"></i> GitHub:
+                <a href="https://github.com/Rockymine8" target="_blank">
+                    github.com/Rockymine8
+                </a>
+            </p>
+
             <!-- Add more contact information as needed -->
         </section>
 
