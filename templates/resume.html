@@ -71,8 +71,7 @@
         <section id="projects" class="light-blue">
             <h2>Projects</h2>
 
-            {% if project['id'] != 1 %} {% for project in projects %}
-
+            {% for project in projects %} {% if project['id'] != 1 %}
             <div class="project">
                 <h3>{{ project['name'] }}</h3>
                 <p>{{ project['description'] }}</p>
@@ -87,7 +86,7 @@
 
                 <!-- Add more details or links as needed -->
             </div>
-            {% endfor %} {% endif %}
+            {% endif %} {% endfor %}
         </section>
 
         <section id="contact" class="light-blue">
