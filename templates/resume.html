@@ -6,16 +6,22 @@
         <title>Jack Bowlin - Developer Portfolio</title>
         <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
         <link rel="stylesheet" href="/static/styles.css" />
+        <script src="https://kit.fontawesome.com/2914e9e354.js" crossorigin="anonymous"></script>
+            <!--<script src="static/script.js"></script>-->
     </head>
+
     <body>
-        <script
+        <header>
+            <div class="header-content">
+                <script
             src="https://kit.fontawesome.com/2914e9e354.js"
             crossorigin="anonymous"></script>
         <header>
-            <h1>Jack Bowlin</h1>
-            <p>Har-Ber High School Student</p>
+                <h1>Jack Bowlin</h1>
+                <p>Har-Ber High School Student</p>
+            </div>
         </header>
-
+        
         <section id="objective" class="light-blue">
             <h2>Objective</h2>
             <p>
@@ -25,42 +31,42 @@
         </section>
 
         <section id="skills" class="light-blue">
-            <style>
-                li {
-                    list-style-type: disc;
-                    margin-bottom: 10px;
-                }
-            </style>
             <h2>Skills</h2>
-
             <ul>
                 <li>
+                    <i class="fas fa-code"></i>
                     <strong>Programming:</strong> Proficient in multiple
                     languages, including those covered in Programming 1, AP
                     Computer Science A, and AP Computer Science Principles.
                 </li>
                 <li>
+                    <i class="fas fa-robot"></i>
                     <strong>Robotics:</strong> Completed Robotics I & II
                     courses.
                 </li>
                 <li>
+                    <i class="fas fa-database"></i>
                     <strong>Database Design:</strong> Certified in Microsoft SQL
                     Server & Database Design.
                 </li>
                 <li>
+                    <i class="fas fa-laptop"></i>
                     <strong>IT Skills:</strong> Earned an Intro to I.T.
                     certificate, showing foundational knowledge in information
                     technology.
                 </li>
                 <li>
+                    <i class="fas fa-code"></i>
                     <strong>Web Development:</strong> Currently enrolled in a
                     front-end web development course.
                 </li>
                 <li>
+                    <i class="fas fa-mobile-alt"></i>
                     <strong>Mobile App Development:</strong> Currently enrolled
                     in a Flutter mobile app development course.
                 </li>
                 <li>
+                    <i class="fas fa-hands-helping"></i>
                     <strong>Community Service:</strong> Utilized computer
                     science skills in the EAST program to create projects
                     benefiting the local community.
@@ -69,47 +75,66 @@
         </section>
 
         <section id="projects" class="light-blue">
+
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    {% for project in projects %} {% if project['id'] != 1 %}
+                    <div class="project-card">
+                        <h3>{{ project['name'] }}</h3>
+                        <p>{{ project['description'] }}</p>
+                        {% if project['imageurl'] %}
+                        <img src="{{ project['imageurl'] }}" alt="{{ project['name'] }} Image">
+                        {% endif %}
+                        {% if project['websiteurl'] %}
+                        <p>
+                            <a href="{{ project['websiteurl'] }}" target="_blank"
+                                >Visit Website</a
+                            >
+                        </p>
+                        {% endif %}
+                    </div>
+                    {% endif %} {% endfor %}
+                </div>
+                
+            
+        </section>
+        
+        <section id="projects" class="light-blue">
             <h2>Projects</h2>
-
-            {% for project in projects %} {% if project['id'] != 1 %}
-            <div class="project">
-                <h3>{{ project['name'] }}</h3>
-                <p>{{ project['description'] }}</p>
-
-                {% if project['websiteurl'] %}
-                <p>
-                    <a href="{{ project['websiteurl'] }}" target="_blank"
-                        >{{ project['websiteurl'] }}</a
-                    >
-                </p>
-                {% endif %}
-            </div>
-            {% endif %} {% endfor %}
+            <div id="github-projects" class="projects-container"></div>
         </section>
 
         <section id="contact" class="light-blue">
             <h2>Contact Me</h2>
+            <div class="contact-info">
 
-            <p>
-                <i class="fas fa-envelope"></i> Email:
-                <a href="mailto:jrbowlin7@gmail.com" target="_blank"
-                    >jrbowlin7@gmail.com</a
-                >
-            </p>
-            <p>
-                <i class="fab fa-linkedin"></i> LinkedIn:
-                <a href="https://linkedin.com/in/jack-bowlin/" target="_blank">
-                    linkedin.com/in/jack-bowlin/
-                </a>
-            </p>
-            <p>
-                <i class="fab fa-github"></i> GitHub:
-                <a href="https://github.com/Rockymine8" target="_blank">
-                    github.com/Rockymine8
-                </a>
-            </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i> Email:
+                    <a href="mailto:jrbowlin7@gmail.com" target="_blank"
+                        >jrbowlin7@gmail.com</a
+                    >
+                </p>
+                <p>
+                    <i class="fab fa-linkedin"></i> LinkedIn:
+                    <a
+                        href="https://linkedin.com/in/jack-bowlin/"
+                        target="_blank">
+                        linkedin.com/in/jack-bowlin/
+                    </a>
+                </p>
+                <p>
+                    <i class="fab fa-github"></i> GitHub:
+                    <a href="https://github.com/Rockymine8" target="_blank">
+                        github.com/Rockymine8
+                    </a>
+                </p>
+            </div>
         </section>
 
-        <!--<footer><p>&copy; 2024 Jack Bowlin - Developer Portfolio</p></footer>-->
+        <footer>
+            <p>&copy; 2024 Jack Bowlin - Developer Portfolio</p>
+        </footer>
     </body>
+    
 </html>

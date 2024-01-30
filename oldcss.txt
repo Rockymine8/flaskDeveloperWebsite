@@ -1,0 +1,238 @@
+
+/* floral-style.css */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif; /* Verdana font */
+    margin: 0;
+    padding: 0;
+    background-color: #7fa9ed;
+   /* background-color:#89C2D9; /*#f2f0e3;*/
+    color: #333; 
+    justify-content: start;
+}
+
+header {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1B4079;
+    /*background-color: #f9d2c2; */
+    font-weight: 400;
+    color: #333; 
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+header h1{
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: -10px;
+    margin-top: 0px;
+    padding-top: 10px;
+    color:white;
+
+}
+
+header p {
+    font-size: 30px;
+    margin-top: -10px; /* Adjust the margin values as needed */
+    color:white;
+    padding-bottom: 20px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 1200px) {
+    header h1{
+        font-weight: 400;
+        font-size: 40px;
+        
+    }
+    
+    header p {
+        font-size: 20px;
+    }
+    
+}
+
+
+
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 20px;
+    background-color: #e6d1a1; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/**/
+
+.red {
+    background-color: #fcb1b4;
+}
+
+.yellow {
+    background-color: #fed485;
+}
+
+.green {
+    background-color: #98d7ae;
+}
+
+.blue {
+    background-color: #9cdce7;
+}
+
+.light-blue {
+    /*background-color: #A9D6E5;
+    /*background-color: #FFECD1;*/
+    background-color: #F2F2F2;
+}
+
+h1,
+h2,
+h3 {
+    color: #333; /
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #333; 
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #e6d1a1; 
+    color: #333; 
+}
+
+
+ 
+
+
+old html:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jack Bowlin - Developer Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+        <link rel="stylesheet" href="/static/styles.css" />
+    </head>
+    <body>
+        <script
+            src="https://kit.fontawesome.com/2914e9e354.js"
+            crossorigin="anonymous"></script>
+        <header>
+            <h1>Jack Bowlin</h1>
+            <p>Har-Ber High School Student</p>
+        </header>
+
+        <section id="objective" class="light-blue">
+            <h2>Objective</h2>
+            <p>
+                I'm Jack. I'm a junior at Har-Ber High School, and I'm seeking
+                internship opportunities.
+            </p>
+        </section>
+
+        <section id="skills" class="light-blue">
+            <style>
+                li {
+                    list-style-type: disc;
+                    margin-bottom: 10px;
+                }
+            </style>
+            <h2>Skills</h2>
+
+            <ul>
+                <li>
+                    <strong>Programming:</strong> Proficient in multiple
+                    languages, including those covered in Programming 1, AP
+                    Computer Science A, and AP Computer Science Principles.
+                </li>
+                <li>
+                    <strong>Robotics:</strong> Completed Robotics I & II
+                    courses.
+                </li>
+                <li>
+                    <strong>Database Design:</strong> Certified in Microsoft SQL
+                    Server & Database Design.
+                </li>
+                <li>
+                    <strong>IT Skills:</strong> Earned an Intro to I.T.
+                    certificate, showing foundational knowledge in information
+                    technology.
+                </li>
+                <li>
+                    <strong>Web Development:</strong> Currently enrolled in a
+                    front-end web development course.
+                </li>
+                <li>
+                    <strong>Mobile App Development:</strong> Currently enrolled
+                    in a Flutter mobile app development course.
+                </li>
+                <li>
+                    <strong>Community Service:</strong> Utilized computer
+                    science skills in the EAST program to create projects
+                    benefiting the local community.
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="light-blue">
+            <h2>Projects</h2>
+
+            {% for project in projects %} {% if project['id'] != 1 %}
+            <div class="project">
+                <h3>{{ project['name'] }}</h3>
+                <p>{{ project['description'] }}</p>
+
+                {% if project['websiteurl'] %}
+                <p>
+                    <a href="{{ project['websiteurl'] }}" target="_blank"
+                        >{{ project['websiteurl'] }}</a
+                    >
+                </p>
+                {% endif %}
+            </div>
+            {% endif %} {% endfor %}
+        </section>
+
+        <section id="contact" class="light-blue">
+            <h2>Contact Me</h2>
+
+            <p>
+                <i class="fas fa-envelope"></i> Email:
+                <a href="mailto:jrbowlin7@gmail.com" target="_blank"
+                    >jrbowlin7@gmail.com</a
+                >
+            </p>
+            <p>
+                <i class="fab fa-linkedin"></i> LinkedIn:
+                <a href="https://linkedin.com/in/jack-bowlin/" target="_blank">
+                    linkedin.com/in/jack-bowlin/
+                </a>
+            </p>
+            <p>
+                <i class="fab fa-github"></i> GitHub:
+                <a href="https://github.com/Rockymine8" target="_blank">
+                    github.com/Rockymine8
+                </a>
+            </p>
+        </section>
+
+        <!--<footer><p>&copy; 2024 Jack Bowlin - Developer Portfolio</p></footer>-->
+    </body>
+</html>
