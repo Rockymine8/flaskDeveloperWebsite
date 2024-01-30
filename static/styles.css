@@ -172,11 +172,11 @@ a:hover {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
+/*
 .project-card h3,
 p {
     color: #ffffff;
-}
+}*/
 .project-card:hover {
     transform: scale(1.05);
 }
