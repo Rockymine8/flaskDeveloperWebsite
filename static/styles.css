@@ -167,7 +167,7 @@ a:hover {
     flex: 0 0 calc(40%); /* Adjust the percentage and spacing as needed */
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #538b7d;
+    background-color: #95d5b2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -182,7 +182,7 @@ p {
 }
 
 .project-card a {
-    color: #b5e48c; /* Complementary color for hyperlinks */
+    color: #1b4332; /* Complementary color for hyperlinks */
 }
 
 @media only screen and (max-width: 768px) {
