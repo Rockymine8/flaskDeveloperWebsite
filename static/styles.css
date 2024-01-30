@@ -134,7 +134,7 @@ footer {
 /* Responsive styles */
 
 a {
-    color: #007bff; /* Set the link color */
+    color: #005f73; /* Set the link color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition on hover */
 }
@@ -182,10 +182,10 @@ p {
 .project-card:hover {
     transform: scale(1.05);
 }
-
+/*
 .project-card a {
     color: #1b4332; /* Complementary color for hyperlinks */
-}
+}*/
 
 @media only screen and (max-width: 768px) {
     header h1 {
