@@ -134,7 +134,7 @@ footer {
 /* Responsive styles */
 
 a {
-    color: #005f73; /* Set the link color */
+    color: #1d79c3; /* Set the link color */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition on hover */
 }
@@ -184,7 +184,7 @@ p {
 }
 /*
 .project-card a {
-    color: #1b4332; /* Complementary color for hyperlinks */
+    color: #1b4332; /* Complementary color for hyperlinks */ /*
 }*/
 
 @media only screen and (max-width: 768px) {
