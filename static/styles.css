@@ -166,16 +166,16 @@ a:hover {
     flex: 0 0 calc(40%); /* Adjust the percentage and spacing as needed */
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #1d303f;
+    background-color: #cc5500;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
+/*
 .project-card h3,
 p {
     color: #d2dfda;
-}
+}*/
 .project-card:hover {
     transform: scale(1.05);
 }
