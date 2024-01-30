@@ -32,15 +32,18 @@ a {
 
 /* Global styles */
 body {
-    background-color: #f9f9f9;
     background-color: #bfc1d0;
+    background-color: #f9f9f9;
+    background-color: #7fa9ed;
+    background-color: #bfc1d0;
+    background-color: white;
     color: #333;
     line-height: 1.6;
 }
 
 /* Header styles */
 header {
-    background-color: #121229;
+    background-color: #1b4079;
     /*background-color: #005f73;*/
     color: white;
     text-align: center;
@@ -70,7 +73,7 @@ section {
     max-width: 800px;
     margin: 2em auto;
     padding: 40px;
-    background-color: #e0dddf;
+    background-color: #e0e0e0;
     /*94D2BD*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -167,7 +170,7 @@ a:hover {
     flex: 0 0 calc(40%);
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #9c97cb;
+    background-color: #00916e;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     border-radius: 10px;
     transition: transform 0.3s ease;
