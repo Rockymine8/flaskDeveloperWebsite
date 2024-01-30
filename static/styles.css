@@ -137,3 +137,15 @@ footer {
         flex: 1 1 calc(50% - 20px);
     }
 }
+
+a {
+    color: #007bff; /* Set the link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Adjust the hover color */
+    text-decoration: underline; /* Add an underline on hover */
+    cursor: pointer; /* Change the cursor to indicate interactivity */
+}
