@@ -151,7 +151,7 @@ a:hover {
 }
 
 .project-card {
-    max-width: 100%;
+    max-width: 40%;
     margin-bottom: 0px;
     padding: 20px;
     background-color: #ffffff;
