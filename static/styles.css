@@ -167,7 +167,7 @@ a:hover {
     flex: 0 0 calc(40%); /* Adjust the percentage and spacing as needed */
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #006d77;
+    background-color: #538b7d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease;
