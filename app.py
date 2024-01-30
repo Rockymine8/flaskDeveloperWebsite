@@ -18,7 +18,7 @@ def get_db_connection():
 @app.route("/")
 def runSite():
     conn = get_db_connection()
-    projects = conn.execute("SELECT id, name, description, websiteurl FROM projects").fetchall()
+    projects = conn.execute("SELECT id, name, description, websiteurl, display FROM projects").fetchall()
     conn.close()
     print(projects)
     return render_template('resume.html', projects=projects)
