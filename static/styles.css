@@ -172,7 +172,7 @@ a:hover {
 }
 
 .project-card {
-    flex: 0 0 calc(20%); /* Adjust the percentage and spacing as needed */
+    flex: 0 0 calc(35%); /* Adjust the percentage and spacing as needed */
     margin-bottom: 20px;
     padding: 20px;
     background-color: #ffffff;
