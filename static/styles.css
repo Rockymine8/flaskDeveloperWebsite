@@ -70,7 +70,8 @@ section {
     max-width: 800px;
     margin: 2em auto;
     padding: 40px;
-    background-color: #b0c4b1;
+    background-color: #94d2bd;
+    /*94D2BD*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -171,11 +172,11 @@ a:hover {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-/*
+
 .project-card h3,
 p {
-    color: #d2dfda;
-}*/
+    color: #ffffff;
+}
 .project-card:hover {
     transform: scale(1.05);
 }
