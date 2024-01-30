@@ -78,22 +78,22 @@
 
                 <h2>Projects</h2>
                 <div class="projects-container">
-                    {% for project in projects %} {% if project['id'] != 1 %}
-                    <div class="project-card">
-                        <h3>{{ project['name'] }}</h3>
-                        <p>{{ project['description'] }}</p>
-                        {% if project['imageurl'] %}
-                        <img src="{{ project['imageurl'] }}" alt="{{ project['name'] }} Image">
+                    {% for project in projects %}
+                        {% if project['id'] != 1 %}
+                            <div class="project-card">
+                                <h3>{{ project['name'] }}</h3>
+                                <p>{{ project['description'] }}</p>
+                                {% if project['imageurl'] %}
+                                    <img src="{{ project['imageurl'] }}" alt="{{ project['name'] }} Image">
+                                {% endif %}
+                                {% if project['websiteurl'] %}
+                                    <p>
+                                        <a href="{{ project['websiteurl'] }}" target="_blank">Visit Website</a>
+                                    </p>
+                                {% endif %}
+                            </div>
                         {% endif %}
-                        {% if project['websiteurl'] %}
-                        <p>
-                            <a href="{{ project['websiteurl'] }}" target="_blank"
-                                >Visit Website</a
-                            >
-                        </p>
-                        {% endif %}
-                    </div>
-                    {% endif %} {% endfor %}
+                    {% endfor %}
                 </div>
                 
             
