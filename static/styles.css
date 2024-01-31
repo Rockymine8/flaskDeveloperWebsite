@@ -43,7 +43,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #1b4079;
+    background-color: #0d47a1;
     /*background-color: #005f73;*/
     color: white;
     text-align: center;
@@ -170,7 +170,7 @@ a:hover {
     flex: 0 0 calc(40%);
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #00916e;
+    background-color: #90caf9;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     border-radius: 10px;
     transition: transform 0.3s ease;
