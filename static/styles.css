@@ -2,7 +2,7 @@
 
 /*
 
-    #1D303F
+#1D303F
 #366374
 #D2DFDA
 #87AC4F
@@ -170,7 +170,7 @@ a:hover {
     flex: 0 0 calc(40%);
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #64b5f6;
+    background-color: #cccccc;
     /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     border-radius: 10px;
     transition: transform 0.3s ease;
