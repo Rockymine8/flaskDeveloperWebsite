@@ -148,15 +148,6 @@ a:hover {
     cursor: pointer; /* Change the cursor to indicate interactivity */
 }
 
-.project-card:hover::after {
-    content: url(static/silasbanana.PNG);
-    display: block;
-    position: absolute;
-    top: 0; /* Adjust as needed */
-    left: 0; /* Adjust as needed */
-    /* Add other styles as needed */
-}
-
 /*
 .project-card {
     max-width: 30%;
