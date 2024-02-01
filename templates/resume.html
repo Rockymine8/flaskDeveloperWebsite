@@ -79,7 +79,7 @@
             <div class="projects-container">
                 {% for project in projects %}
                     {% if project['display'] %}
-                        <div class="project-card {{ project['color'] }}">
+                        <div class="project-card {{ project['class'] }}">
                             <h3>{{ project['name'] }}</h3>
                             <p>{{ project['description'] }}</p>
                             {% if project['imageurl'] %}
@@ -95,7 +95,6 @@
                 {% endfor %}
             </div>
         </section>
-        
         
      
 
