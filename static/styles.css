@@ -215,6 +215,28 @@ p {
     background-color: #9cdce7;
 }
 
+#skills table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#skills th,
+#skills td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#skills th {
+    background-color: #f2f2f2;
+    align-items: center;
+}
+
+#skills td i {
+    margin-right: 5px;
+}
+
 @media only screen and (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
