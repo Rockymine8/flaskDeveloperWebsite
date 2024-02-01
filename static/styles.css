@@ -55,9 +55,8 @@ header img.custom-icon {
     height: 100%;
     object-fit: contain; /* Adjust this property as needed (contain or cover) */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20px; /* Adjust top value as needed */
+    left: 20px; /* Adjust left value as needed */
 }
 
 header h1 {
