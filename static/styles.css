@@ -53,11 +53,11 @@ header {
 header img.custom-icon {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: contain; /* Adjust this property as needed (contain or cover) */
     position: absolute;
-    top: 50%; /* Center the image vertically */
-    transform: translateY(-50%); /* Adjust position after centering */
-    left: 60px; /* Adjust the left value to your preference */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header h1 {
