@@ -59,7 +59,7 @@ header {
 }
 
 header img.custom-icon {
-    max-width: 100%;
+    max-width: 15%;
     height: auto;
     display: block;
     margin-left: auto;
