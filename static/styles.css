@@ -44,26 +44,18 @@ body {
 /* Header styles */
 header {
     background-color: #0d3b66;
-    /*background-color: #005f73;*/
     color: white;
     text-align: center;
-    /*padding: 40px 20px;*/
-    margin: 0px;
-    padding: 0px;
+    padding: 20px;
+    position: relative;
 }
-/*
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align items to the start (left) 
-}
-*/
+
 header img.custom-icon {
     max-width: 5%;
     height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 10px; /* Adjust the top value to your preference */
+    left: 10px; /* Adjust the left value to your preference */
 }
 
 header h1 {
