@@ -40,18 +40,9 @@
         <section id="skills">
             <h2>Skills</h2>
             <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <!-- Empty cell for icons -->
-                        <th>Skill</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr>
-                        <td><i class="fas fa-code"></i></td>
-                        <td>Programming</td>
+                        <td><i class="fas fa-code"></i> Programming</td>
                         <td>
                             Proficient in multiple languages, including those
                             covered in Programming 1, AP Computer Science A, and
@@ -59,44 +50,44 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-robot"></i></td>
-                        <td>Robotics</td>
+                        <td><i class="fas fa-robot"></i> Robotics</td>
                         <td>Completed Robotics I & II courses.</td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-database"></i></td>
-                        <td>Database Design</td>
+                        <td><i class="fas fa-database"></i> Database Design</td>
                         <td>
                             Certified in Microsoft SQL Server & Database Design.
                         </td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-laptop"></i></td>
-                        <td>IT Skills</td>
+                        <td><i class="fas fa-laptop"></i> IT Skills</td>
                         <td>
                             Earned an Intro to I.T. certificate, showing
                             foundational knowledge in information technology.
                         </td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-code"></i></td>
-                        <td>Web Development</td>
+                        <td><i class="fas fa-code"></i> Web Development</td>
                         <td>
                             Currently enrolled in a front-end web development
                             course.
                         </td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-mobile-alt"></i></td>
-                        <td>Mobile App Development</td>
+                        <td>
+                            <i class="fas fa-mobile-alt"></i> Mobile App
+                            Development
+                        </td>
                         <td>
                             Currently enrolled in a Flutter mobile app
                             development course.
                         </td>
                     </tr>
                     <tr>
-                        <td><i class="fas fa-hands-helping"></i></td>
-                        <td>Community Service</td>
+                        <td>
+                            <i class="fas fa-hands-helping"></i> Community
+                            Service
+                        </td>
                         <td>
                             Utilized computer science skills in the EAST program
                             to create projects benefiting the local community.
@@ -104,29 +95,6 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                {% for project in projects %} {% if project['display'] %}
-                <div class="project-card {{ project['class'] }}">
-                    <h3>{{ project['name'] }}</h3>
-                    <p>{{ project['description'] }}</p>
-                    {% if project['imageurl'] %}
-                    <img
-                        src="{{ project['imageurl'] }}"
-                        alt="{{ project['name'] }} Image" />
-                    {% endif %} {% if project['websiteurl'] %}
-                    <p>
-                        <a href="{{ project['websiteurl'] }}" target="_blank"
-                            >Visit Website</a
-                        >
-                    </p>
-                    {% endif %}
-                </div>
-                {% endif %} {% endfor %}
-            </div>
         </section>
 
         <section id="contact">
