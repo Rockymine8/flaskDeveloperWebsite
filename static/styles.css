@@ -161,22 +161,6 @@ a:hover {
 
 */
 
-.red {
-    background-color: #fcb1b4;
-}
-
-.yellow {
-    background-color: #fed485;
-}
-
-.green {
-    background-color: #98d7ae;
-}
-
-.blue {
-    background-color: #9cdce7;
-}
-
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -206,6 +190,22 @@ p {
 .project-card a {
     color: #1b4332; /* Complementary color for hyperlinks */ /*
 }*/
+
+.red {
+    background-color: #fcb1b4;
+}
+
+.yellow {
+    background-color: #fed485;
+}
+
+.green {
+    background-color: #98d7ae;
+}
+
+.blue {
+    background-color: #9cdce7;
+}
 
 @media only screen and (max-width: 768px) {
     header h1 {
