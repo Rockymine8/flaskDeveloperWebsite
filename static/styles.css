@@ -55,7 +55,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spread items apart, aligning to the start and end */
+    justify-content: flex-start; /* Align items to the start (left) */
 }
 
 header img.custom-icon {
@@ -64,7 +64,6 @@ header img.custom-icon {
 }
 
 .header-text {
-    flex-grow: 1; /* Allow text to take up remaining space */
     text-align: left; /* Align text to the left */
 }
 
