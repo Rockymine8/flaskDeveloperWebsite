@@ -52,7 +52,7 @@ header {
 
 header img.custom-icon {
     max-width: 5%;
-    height: auto;
+    height: center;
     position: absolute;
     top: 10px; /* Adjust the top value to your preference */
     left: 60px; /* Adjust the left value to your preference */
