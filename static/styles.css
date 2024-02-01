@@ -51,8 +51,8 @@ header {
 }
 
 header img.custom-icon {
-    width: auto; /* Set the width to 100% */
-    height: auto; /* Set height to auto to maintain aspect ratio */
+    max-width: auto; /* Set the width to 100% */
+    max-height: auto; /* Set height to auto to maintain aspect ratio */
     position: absolute;
     top: 50%; /* Center the image vertically */
     transform: translateY(-50%); /* Adjust position after centering */
