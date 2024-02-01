@@ -51,23 +51,19 @@ header {
     margin: 0px;
     padding: 0px;
 }
-
+/*
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: flex-start; /* Align items to the start (left) 
 }
-
+*/
 header img.custom-icon {
     max-width: 5%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.header-text {
-    text-align: left; /* Align text to the left */
 }
 
 header h1 {
