@@ -52,6 +52,12 @@ header {
     padding: 0px;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+}
+
 header img.custom-icon {
     max-width: 50px; /* Adjust the size as needed */
     margin-right: 10px; /* Optional: Add margin for spacing */
