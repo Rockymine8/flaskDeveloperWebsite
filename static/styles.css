@@ -55,12 +55,17 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the start (left) */
+    justify-content: space-between; /* Spread items apart, aligning to the start and end */
 }
 
 header img.custom-icon {
     max-width: 50px; /* Adjust the size as needed */
     margin-right: 10px; /* Optional: Add margin for spacing */
+}
+
+.header-text {
+    flex-grow: 1; /* Allow text to take up remaining space */
+    text-align: left; /* Align text to the left */
 }
 
 header h1 {
