@@ -4,150 +4,389 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jack Bowlin</title>
-        <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
-        <link rel="stylesheet" href="/static/styles.css" />
-        <script
-            src="https://kit.fontawesome.com/2914e9e354.js"
-            crossorigin="anonymous"></script>
-        <!--<script src="static/script.js"></script>-->
-    </head>
 
-    <body>
+        <link rel="stylesheet" href="/static/styles.css" />
+        <link rel="stylesheet" href="/static/mediaqueries.css" />
+
         <script
             src="https://kit.fontawesome.com/2914e9e354.js"
             crossorigin="anonymous"></script>
-        <header>
-            <div class="header-content">
-                <img
-                    src="static/jack-full-transparent.png"
-                    alt="Custom Icon"
-                    class="custom-icon" />
-                <div class="header-text">
-                    <h1>Jack Bowlin</h1>
-                    <p>Har-Ber High School Student</p>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Jack Bowlin</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Jack Bowlin</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li>
+                        <a href="#about" onclick="toggleMenu()">About</a>
+                    </li>
+                    <li>
+                        <a href="#experience" onclick="toggleMenu()">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" onclick="toggleMenu()">Project</a>
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="toggleMenu()">Contact</a>
+                    </li>
                 </div>
             </div>
-        </header>
-
-        <section id="objective">
-            <h2>Objective</h2>
-            <p>
-                I'm Jack. I'm a junior at Har-Ber High School, and I'm seeking
-                internship opportunities.
-            </p>
+        </nav>
+        <section id="profile">
+            <div class="section_pic-container">
+                <img
+                    src="/static/assets/new-profile-pic.png"
+                    alt="profile-pic" />
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello I'm</p>
+                <h1 class="title">Jack Bowlin</h1>
+                <p class="section_text_p2">HBHS Student</p>
+                <div class="btn-container">
+                    <button
+                        class="btn btn-color-2"
+                        onclick="window.open('/static/assets/resume-example.pdf')">
+                        <i class="fa-solid fa-file-arrow-down fa-lg"></i>
+                        Resume
+                    </button>
+                    <button
+                        class="btn btn-color-1"
+                        onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                        src="/static/assets/linkedin.png"
+                        alt="My linkedin profile"
+                        class="icon"
+                        onclick="location.href='https://linkedin.com/'" />
+                    <img
+                        src="/static/assets/github.png"
+                        alt="My github profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/'" />
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><i class="fas fa-code"></i> Programming</td>
-                        <td>
-                            Proficient in multiple languages, including those
-                            covered in Programming 1, AP Computer Science A, and
-                            AP Computer Science Principles.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-robot"></i> Robotics</td>
-                        <td>Completed Robotics I & II courses.</td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-database"></i> Database Design</td>
-                        <td>
-                            Certified in Microsoft SQL Server & Database Design.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-laptop"></i> IT Skills</td>
-                        <td>
-                            Earned an Intro to I.T. certificate, showing
-                            foundational knowledge in information technology.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><i class="fas fa-code"></i> Web Development</td>
-                        <td>
-                            Currently enrolled in a front-end web development
-                            course.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fas fa-mobile-alt"></i> Mobile App
-                            Development
-                        </td>
-                        <td>
-                            Currently enrolled in a Flutter mobile app
-                            development course.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fas fa-hands-helping"></i> Community
-                            Service
-                        </td>
-                        <td>
-                            Utilized computer science skills in the EAST program
-                            to create projects benefiting the local community.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section_pic-container">
+                    <img
+                        src="/static/assets/about-pic.png"
+                        alt="Profile picture"
+                        class="about-pic" />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img
+                                src="/static/assets/experience.png"
+                                alt="Experience icon"
+                                class="icon" />
+                            <h3>Experience</h3>
+                            <p>
+                                2+ years
+                                <br />
+                                Programming courses
+                            </p>
+                        </div>
+                        <div class="details-container">
+                            <img
+                                src="/static/assets/education.png"
+                                alt="Education icon"
+                                class="icon" />
+                            <h3>Education</h3>
+                            <p>
+                                Current Har-Ber High School Student
+                                <br />
+                                4.0 GPA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Hello! I'm Jack, a current student at Har-Ber High
+                            School, and I am seeking internship opportunities. I
+                            am proficient in several languages, including Java,
+                            Python, and TSQL. Currently holding a 3.97 GPA, I
+                            have completed several computer science courses
+                            through school, as well as courses outside of
+                            school. I am currently in AP Calculus AB, AP
+                            Computer Science A, AP Computer Science Principals,
+                            and I am a Teacher Assistant for Programming One.
+                            Outside of school, I have completed a course in
+                            Microsoft SQL Server, and I am currently enrolled in
+                            courses for Dart with the Flutter framework, as well
+                            as a front end development course.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="/static/assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#experience'" />
+        </section>
+
+        <section id="experience">
+            <p class="section_text_p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Web Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">General Purpose</h2>
+                        <div class="article-container">
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>Inform</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>TSQL</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>Dart/Flutter</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="/static/assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#projects'" />
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects-container">
-                {% for project in projects %} {% if project['display'] %}
-                <div class="project-card {{ project['class'] }}">
-                    <h3>{{ project['name'] }}</h3>
-                    <p>{{ project['description'] }}</p>
-                    {% if project['imageurl'] %}
-                    <img
-                        src="{{ project['imageurl'] }}"
-                        alt="{{ project['name'] }} Image" />
-                    {% endif %} {% if project['websiteurl'] %}
-                    <p>
-                        <a href="{{ project['websiteurl'] }}" target="_blank"
-                            >Visit Website</a
-                        >
-                    </p>
-                    {% endif %}
+            <p class="section_text_p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="/static/assets/project-1.png"
+                                alt="Project 1"
+                                class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Project One
+                        </h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="/static/assets/project-2.png"
+                                alt="Project 2"
+                                class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Project Two
+                        </h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img
+                                src="/static/assets/project-3.png"
+                                alt="Project 3"
+                                class="project-img" />
+                        </div>
+                        <h2 class="experience-sub-title project-title">
+                            Project Three
+                        </h2>
+                        <div class="btn-container">
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">
+                                Github
+                            </button>
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                {% endif %} {% endfor %}
             </div>
+            <img
+                src="/static/assets/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#projects'" />
         </section>
 
         <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p>
-                    <i class="fas fa-envelope"></i> Email:
-                    <a href="mailto:jrbowlin7@gmail.com" target="_blank"
-                        >jrbowlin7@gmail.com</a
-                    >
-                </p>
-                <p>
-                    <i class="fab fa-linkedin"></i> LinkedIn:
-                    <a
-                        href="https://linkedin.com/in/jack-bowlin/"
-                        target="_blank">
-                        linkedin.com/in/jack-bowlin/
-                    </a>
-                </p>
-                <p>
-                    <i class="fab fa-github"></i> GitHub:
-                    <a href="https://github.com/Rockymine8" target="_blank">
-                        github.com/Rockymine8
-                    </a>
-                </p>
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img
+                        src="/static/assets/email.png"
+                        alt="Email Icon"
+                        class="icon contact-icon email-icon" />
+                    <p>
+                        <a href="mailto:jrbowlin7@gmail.com">
+                            jrbowlin7@gmail.com
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img
+                        src="/static/assets/linkedin.png"
+                        alt="LinkedIn Icon"
+                        class="icon contact-icon" />
+                    <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                </div>
             </div>
         </section>
 
         <footer>
-            <!--<p>&copy; 2024 Jack Bowlin - Developer Portfolio</p>-->
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Jack Bowlin. All Rights Reserved</p>
         </footer>
+
+        <script src="/static/script.js"></script>
     </body>
 </html>
