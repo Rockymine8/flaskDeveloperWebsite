@@ -2,3 +2,5 @@ __pycache__/
 .venv/
 favicon_io/
 .DS_Store/
+.OLDresume.html/
+.OLDstyles.css
