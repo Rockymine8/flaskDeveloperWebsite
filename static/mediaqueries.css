@@ -1,6 +1,6 @@
 @media screen and (max-width: 1200px) {
     #profile {
-        height: 83vh;
+        /* height: 83vh; */
         margin-bottom: 6rem;
     }
     .about-containers {
@@ -97,6 +97,23 @@
         font-size: 2rem;
     }
     .text-container {
-        text-align: justift;
+        /* text-align: justify; */
+    }
+
+    .projects-containers > .details-container {
+        flex: 0 0 90%;
     }
 }
+
+/* @media screen and (min-width: 1400px) {
+    .projects-containers {
+        max-width: 70%;
+        grid-template-columns: repeat(auto-fit, 20rem, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr)); 
+    }
+
+    .project-img {
+        width: 90%;
+        height: auto;
+    }
+} */
