@@ -18,8 +18,9 @@ def get_db_connection():
 @app.route("/")
 def runSite():
     conn = get_db_connection()
-    projects = conn.execute("SELECT id, name, description, websiteurl, display, class FROM projects").fetchall()
+    projects = conn.execute("SELECT id, name, description, websiteurl, githuburl, imagepath FROM projects").fetchall()
     languages = conn.execute("SELECT id, name, experience FROM languages").fetchall()
+    
     #new database code
     #projects = conn.execute("SELECT id, name, experience, type").fetchall()
     conn.close()

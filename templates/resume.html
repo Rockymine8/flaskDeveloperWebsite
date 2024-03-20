@@ -273,98 +273,6 @@
                                 </div>
                             </article>
                             {% endfor %}
-                            <!--
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>CSS</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>Java</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>Inform</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>Python</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>TSQL</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>Git</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="icon-container">
-                                    <i
-                                        class="fa-solid fa-circle-check fa-xl"></i>
-                                </div>
-                                <div>
-                                    <h3>Dart/Flutter</h3>
-                                    <p>Basic</p>
-                                </div>
-                            </article>-->
                         </div>
                     </div>
                 </div>
@@ -382,6 +290,37 @@
             <h1 class="title">Projects</h1>
             <!-- <div class="experience-details-container"> -->
             <div class="projects-containers">
+                {% for project in projects %}
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <div class="projects-img">
+                            <img
+                                src="{{ project.imagepath }}"
+                                alt="Project 1"
+                                class="project-img" />
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">
+                        {{ project.name }}
+                    </h2>
+                    <div class="btn-container">
+                        {% if project.websiteurl %}
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='{{ project.websiteurl }}'">
+                            Github
+                        </button>
+                        {% endif %} {% if project.githuburl %}
+                        <button
+                            class="btn btn-color-2 project-btn"
+                            onclick="location.href='{{ project.githuburl }}'">
+                            Live Demo
+                        </button>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+
                 <div class="details-container color-container">
                     <div class="article-container">
                         <div class="projects-img">
