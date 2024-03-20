@@ -261,6 +261,19 @@
                         </h2>
 
                         <div class="article-container">
+                            {% for project in projects %}
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div>
+                                    <h3>{{project['name']}}</h3>
+                                    <p>{{project['experience']}}</p>
+                                </div>
+                            </article>
+                            {% endfor %}
+                            <!--
                             <article>
                                 <div class="icon-container">
                                     <i
@@ -271,6 +284,7 @@
                                     <p>Experienced</p>
                                 </div>
                             </article>
+                            
                             <article>
                                 <div class="icon-container">
                                     <i
@@ -350,7 +364,7 @@
                                     <h3>Dart/Flutter</h3>
                                     <p>Basic</p>
                                 </div>
-                            </article>
+                            </article>-->
                         </div>
                     </div>
                 </div>
