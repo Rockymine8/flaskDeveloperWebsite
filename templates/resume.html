@@ -165,13 +165,30 @@
                         <h2 class="experience-sub-title">Courses</h2>
 
                         <div class="article-container">
+                            {% for course in courses%}
+                            <article>
+                                <div class="icon-container">
+                                    <i
+                                        class="fa-solid fa-circle-check fa-xl"></i>
+                                </div>
+                                <div class="text-container">
+                                    <h3>{{ course.name }}</h3>
+                                    {% if course.status == 0 %}
+                                    <p>In Progress</p>
+                                    {% else %}
+                                    <p>Complete</p>
+                                    {% endif %}
+                                </div>
+                            </article>
+                            {% endfor %}
+                            <!-- <div class="article-container">
                             <article
                                 class="experience-article font-awesome-icons">
                                 <div class="icon-container">
                                     <i
                                         class="fa-regular fa-hourglass-half fa-xl"></i>
                                 </div>
-                                <div>
+                                <div class="text-container">
                                     <h3>AP Computer Science A</h3>
                                     <p>In Progress</p>
                                 </div>
@@ -253,6 +270,7 @@
                                     <p>Complete</p>
                                 </div>
                             </article>
+                        </div> -->
                         </div>
                     </div>
                     <div class="details-container">
@@ -267,7 +285,7 @@
                                     <i
                                         class="fa-solid fa-circle-check fa-xl"></i>
                                 </div>
-                                <div>
+                                <div class="text-container">
                                     <h3>{{ language.name }}</h3>
                                     <p>{{ language.experience }}</p>
                                 </div>

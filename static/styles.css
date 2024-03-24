@@ -486,6 +486,34 @@ footer p {
 }
 */
 
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-details-container
+    > .about-containers
+    > .details-container
+    > .article-container
+    > article {
+    justify-content: start;
+}
+
+.text-container h3,
+.text-container p {
+    /* margin-bottom: 0; */
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* .text-container p {
+    margin-top: 0;
+} */
+
 .icon-container {
     display: flex;
     align-items: center;

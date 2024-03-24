@@ -14,12 +14,13 @@ def runSite():
     conn = get_db_connection()
     projects = conn.execute("SELECT id, name, description, websiteurl, githuburl, imagepath FROM projects").fetchall()
     languages = conn.execute("SELECT id, name, experience FROM languages").fetchall()
+    courses = conn.execute("SELECT id, name, status, courseurl FROM courses").fetchall()
     
     #new database code
     #projects = conn.execute("SELECT id, name, experience, type").fetchall()
     conn.close()
     print(projects)
-    return render_template('resume.html', projects=projects, languages=languages)
+    return render_template('resume.html', projects=projects, languages=languages, courses=courses)
 
 if __name__ == "__main__":
     app.run(port=8000, debug=True)
