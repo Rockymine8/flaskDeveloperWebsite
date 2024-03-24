@@ -291,34 +291,48 @@
             <!-- <div class="experience-details-container"> -->
             <div class="projects-containers">
                 {% for project in projects %}
+                <!-- Modify each project container to include both image and text -->
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <div class="projects-img">
-                            <img
-                                src="{{ project.imagepath }}"
-                                alt="Project {{ project.id }}"
-                                class="project-img" />
+                        <div class="project-content">
+                            <div class="projects-img">
+                                <img
+                                    src="{{ project.imagepath }}"
+                                    alt="Project {{ project.id }}"
+                                    class="project-img" />
+                            </div>
+                            <div class="project-info hide">
+                                <p class="project-description">
+                                    {{ project.description }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <h2 class="experience-sub-title project-title">
-                        {{ project.name }}
-                    </h2>
-                    <div class="btn-container">
-                        {% if project.websiteurl %}
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='{{ project.websiteurl }}'">
-                            Live Demo
+                        <!-- Add info button -->
+                        <h2 class="experience-sub-title project-title">
+                            {{ project.name }}
+                        </h2>
+                        <!-- End of info button -->
+                        <div class="btn-container">
+                            {% if project.websiteurl %}
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='{{ project.websiteurl }}'">
+                                Live Demo
+                            </button>
+                            {% endif %} {% if project.githuburl %}
+                            <button
+                                class="btn btn-color-2 project-btn"
+                                onclick="location.href='{{ project.githuburl }}'">
+                                GitHub
+                            </button>
+                            {% endif %}
+                        </div>
+                        <button class="info-btn">
+                            <i class="fas fa-info-circle"></i>
                         </button>
-                        {% endif %} {% if project.githuburl %}
-                        <button
-                            class="btn btn-color-2 project-btn"
-                            onclick="location.href='{{ project.githuburl }}'">
-                            GitHub
-                        </button>
-                        {% endif %}
                     </div>
                 </div>
+
                 {% endfor %}
             </div>
             <img

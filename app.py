@@ -21,6 +21,6 @@ def runSite():
     print(projects)
     return render_template('resume.html', projects=projects, languages=languages)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(port=8000, debug=True)
 

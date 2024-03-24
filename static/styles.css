@@ -224,15 +224,18 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    align-items: center;
+    height: auto;
 }
-
 .btn {
     font-weight: 600;
     transition: all 300ms easy;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    height: auto;
 }
+
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -315,10 +318,9 @@ section {
 .projects-containers > .details-container {
     flex: 0 0 auto;
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
     margin: 5px;
     /* flex-basis: 25%; */
-
 }
 
 .details-container {
@@ -496,3 +498,53 @@ td {
 */
 /* 
 .projects-img {
+*/
+
+#projects > .projects-containers > .details-container > .article-container {
+    gap: 0rem;
+    text-align: center;
+}
+
+.info-btn {
+    margin-left: auto;
+}
+
+.article-container .projects-img,
+.project-info {
+    flex: 1; /* Distribute remaining space equally */
+    display: flex; /* Allow children to stretch vertically */
+    align-items: stretch; /* Stretch children vertically */
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure child elements stretch vertically */
+    max-width: 300px; /* Adjust this value as needed */
+    height: 200px; /* Set a fixed height for the project content container */
+}
+
+.project-img {
+    max-width: 100%; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.project-info {
+    display: none; /* Initially hide project info */
+    flex-grow: 1; /* Allow the info container to grow to fill remaining space */
+    padding: 10px; /* Add padding to create space between content */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+    height: 100%; /* Make the project info container fill the height of the project content container */
+}
+
+.project-info.show {
+    display: flex; /* Show project info when clicked */
+}
+
+.projects-img.hide {
+    display: none;
+}
+
+.btn-container {
+    flex-shrink: 0;
+}
