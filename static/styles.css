@@ -536,9 +536,32 @@ td {
 .info-btn {
     position: absolute;
     z-index: 1;
-    top: 0; /* Align the button to the top */
-    left: 0; /
+    top: -5%; /* Align the button to the top */
+    left: -4%; /
 }
+
+
+.info-btn .fas {
+    font-size: 1.2anem; /* Adjust the size as needed */
+}
+
+.info-btn.hide {
+    display: none;
+}
+
+.info-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9%; 
+    height: 8%; 
+    background-color: rgb(250, 250, 250);
+    border-radius: 100%;
+    border: 0;
+
+    
+}
+
 
 .article-container {
     position: relative;
@@ -557,6 +580,12 @@ td {
     align-items: stretch; /* Ensure child elements stretch vertically */
     max-width: 300px; /* Adjust this value as needed */
     height: 200px; /* Set a fixed height for the project content container */
+    /* margin-bottom: 10%; */
+}
+
+.project-info.show {
+    /* padding-top: 0.938rem; */
+    /* margin-bottom: -93.8%; */
 }
 
 .project-img {
@@ -568,9 +597,11 @@ td {
     display: none; /* Initially hide project info */
     flex-grow: 1; /* Allow the info container to grow to fill remaining space */
     padding: 10px; /* Add padding to create space between content */
-    overflow-y: auto; /* Add vertical scrollbar if content overflows */
-    height: 100%; /* Make the project info container fill the height of the project content container */
-}
+    overflow-y: auto;
+    /* Add vertical scrollbar if content overflows */
+    
+    height: 89%; /* Make the project info container fill the height of the project content container */
+}   
 
 .project-info.show {
     display: flex; /* Show project info when clicked */
@@ -583,3 +614,12 @@ td {
 .btn-container {
     flex-shrink: 0;
 }
+
+
+/* body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+} */
+
+/* body {
+    font-family: "Papyrus", "Apple Chancery", "Brush Script MT", cursive;
+} */
