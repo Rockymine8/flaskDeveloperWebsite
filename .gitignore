@@ -1,6 +1,6 @@
-__pycache__/
-.venv/
-favicon_io/
-.DS_Store/````
+__pycache__
+.venv
+favicon_io
+.DS_Store
 templates/OLDresume.html
 static/OLDstyles.css
