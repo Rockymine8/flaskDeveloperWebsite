@@ -272,6 +272,7 @@ section {
 
 #about {
     position: relative;
+    margin-bottom: 12rem;
 }
 
 .about-containers {
@@ -404,6 +405,7 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .color-container {
