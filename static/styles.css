@@ -545,6 +545,10 @@ td {
     font-size: 1.2anem; /* Adjust the size as needed */
 }
 
+.info-btn:hover{
+    cursor: pointer; ;
+}
+
 .info-btn.hide {
     display: none;
 }
