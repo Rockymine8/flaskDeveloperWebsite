@@ -566,6 +566,10 @@ td {
     
 }
 
+.text-btn-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .article-container {
     position: relative;
