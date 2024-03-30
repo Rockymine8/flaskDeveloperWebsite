@@ -342,13 +342,13 @@
                                 {% if project.websiteurl %}
                                 <button
                                     class="btn btn-color-2 project-btn"
-                                    onclick="location.href='{{ project.websiteurl }}'">
+                                    onclick="window.open('{{ project.websiteurl }}', '_blank')"
                                     Live Demo
                                 </button>
                                 {% endif %} {% if project.githuburl %}
                                 <button
                                     class="btn btn-color-2 project-btn"
-                                    onclick="location.href='{{ project.githuburl }}'">
+                                    onClick="window.open('{{ project.githuburl }}', '_blank')"
                                     GitHub
                                 </button>
                                 {% endif %}
