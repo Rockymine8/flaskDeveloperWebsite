@@ -637,5 +637,5 @@ td {
 
 
 button {
-    -webkit-tap-highlight-color: transparent !important;
+    -webkit-tap-highlight-color: transparent;
 }
