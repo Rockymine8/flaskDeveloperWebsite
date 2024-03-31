@@ -633,3 +633,9 @@ td {
 /* body {
     font-family: "Papyrus", "Apple Chancery", "Brush Script MT", cursive;
 } */
+
+
+
+a {
+    -webkit-tap-highlight-color: transparent !important;
+}
