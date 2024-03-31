@@ -636,6 +636,7 @@ td {
 
 
 
-button{
-    -webkit-tap-highlight-color: transparent;
-}
+
+button {
+    color: #000;
+  }
