@@ -636,6 +636,6 @@ td {
 
 
 
-button {
-    -webkit-tap-highlight-color: transparent;
+button:link button:visited{
+    text-decoration: none;
 }
