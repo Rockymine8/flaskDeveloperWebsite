@@ -308,14 +308,14 @@
             <h1 class="title">Projects</h1>
             <!-- <div class="experience-details-container"> -->
             <div class="projects-containers">
-                <!-- {% for project in projects %} -->
-                {% for x in range(8) %}
-                    <!-- {% if project.id < 100 %}  -->
+                {% for project in projects %}
+                    {% if project.id < 100 %} 
                         <!-- Modify each project container to include both image and text -->
                         <div class="details-container color-container">
                             <div class="article-container">
                                 <button class="info-btn show">
-                                    <i %class="fas fa-info-circle"></i>
+                                    
+                                    <i class="fas fa-times"></i>
                                 </button>
                                 <button class="info-btn hide">
                                     <i class="fas fa-times"></i>
